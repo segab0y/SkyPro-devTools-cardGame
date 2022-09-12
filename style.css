@@ -3,7 +3,7 @@ body {
     padding: 0;
 }
 
-.first__page {
+.page__difficulty {
     position: relative;
     width: 1024px;
     height: 774px;
@@ -11,7 +11,7 @@ body {
     background: #004980;
 }
 
-.choose__difficulty {
+.frame__difficulty {
     position: absolute;
     width: 480px;
     height: 459px;
@@ -40,7 +40,6 @@ body {
 
     color: #004980;
 }
-
 
 .level__easy {
     position: absolute;
