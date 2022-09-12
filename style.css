@@ -68,7 +68,7 @@ body {
 
     display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
 
     color: #0080C1;
 }
@@ -99,7 +99,7 @@ body {
 
     display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
 
     color: #0080C1;
 }
@@ -130,7 +130,7 @@ body {
 
     display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
 
     color: #0080C1;
 }
@@ -161,7 +161,7 @@ body {
 
     display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
     font-feature-settings: 'pnum' on, 'lnum' on;
 
     color: #FFFFFF;
