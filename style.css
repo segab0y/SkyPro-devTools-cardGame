@@ -1,167 +1,261 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.page__difficulty {
-    position: relative;
-    width: 1024px;
-    height: 774px;
+.page__frame {
+  position: relative;
+  width: 1024px;
+  height: 774px;
 
-    background: #004980;
+  background: #004980;
 }
 
 .frame__difficulty {
-    position: absolute;
-    width: 480px;
-    height: 459px;
-    left: 272px;
-    top: 158px;
+  position: absolute;
+  width: 480px;
+  height: 459px;
+  left: 272px;
+  top: 158px;
 
-    background: #C2F5FF;
-    border-radius: 12px;
+  background: #c2f5ff;
+  border-radius: 12px;
 }
 
 .text__difficulty {
-    position: absolute;
-    width: 208px;
-    height: 96px;
-    left: 408px;
-    top: 210px;
+  position: absolute;
+  width: 208px;
+  height: 96px;
+  left: 408px;
+  top: 210px;
 
-    font-family: 'StratosSkyeng';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 48px;
+  font-family: 'StratosSkyeng';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
 
-    text-align: center;
-    font-feature-settings: 'pnum' on, 'lnum' on;
+  text-align: center;
+  font-feature-settings: 'pnum' on, 'lnum' on;
 
-    color: #004980;
+  color: #004980;
 }
 
 .level__easy {
-    position: absolute;
-    width: 98px;
-    height: 98px;
-    left: 341px;
-    top: 354px;
+  position: absolute;
+  width: 98px;
+  height: 98px;
+  left: 341px;
+  top: 354px;
 
-    background: #FFFFFF;
-    border-radius: 12px;
+  background: #ffffff;
+  border-radius: 12px;
 }
 
 .text__easy {
-    position: absolute;
-    width: 97px;
-    height: 98px;
-    left: 342px;
-    top: 354px;
+  position: absolute;
+  width: 97px;
+  height: 98px;
+  left: 342px;
+  top: 354px;
 
-    font-family: 'StratosSkyeng';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 72px;
+  font-family: 'StratosSkyeng';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    color: #0080C1;
+  color: #0080c1;
 }
 
 .level__medium {
-    position: absolute;
-    width: 98px;
-    height: 98px;
-    left: 463px;
-    top: 354px;
+  position: absolute;
+  width: 98px;
+  height: 98px;
+  left: 463px;
+  top: 354px;
 
-    background: #FFFFFF;
-    border-radius: 12px;
+  background: #ffffff;
+  border-radius: 12px;
 }
 
 .text__medium {
-    position: absolute;
-    width: 96px;
-    height: 98px;
-    left: 465px;
-    top: 354px;
+  position: absolute;
+  width: 96px;
+  height: 98px;
+  left: 465px;
+  top: 354px;
 
-    font-family: 'StratosSkyeng';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 72px;
+  font-family: 'StratosSkyeng';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    color: #0080C1;
+  color: #0080c1;
 }
 
 .level__hard {
-    position: absolute;
-    width: 98px;
-    height: 98px;
-    left: 585px;
-    top: 354px;
+  position: absolute;
+  width: 98px;
+  height: 98px;
+  left: 585px;
+  top: 354px;
 
-    background: #FFFFFF;
-    border-radius: 12px;
+  background: #ffffff;
+  border-radius: 12px;
 }
 
 .text__hard {
-    position: absolute;
-    width: 96px;
-    height: 98px;
-    left: 587px;
-    top: 354px;
+  position: absolute;
+  width: 96px;
+  height: 98px;
+  left: 587px;
+  top: 354px;
 
-    font-family: 'StratosSkyeng';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 72px;
+  font-family: 'StratosSkyeng';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    color: #0080C1;
+  color: #0080c1;
 }
 
 .start__button {
-    position: absolute;
-    width: 246px;
-    height: 50px;
-    left: 389px;
-    top: 519px;
+  position: absolute;
+  width: 246px;
+  height: 50px;
+  left: 389px;
+  top: 519px;
 
-    background: #7AC100;
-    border-radius: 12px;
+  background: #7ac100;
+  border-radius: 12px;
 }
 
 .text__button {
-    position: absolute;
-    width: 246px;
-    height: 48px;
-    left: 389px;
-    top: 519px;
+  position: absolute;
+  width: 246px;
+  height: 48px;
+  left: 389px;
+  top: 519px;
 
-    font-family: 'StratosSkyeng';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
+  font-family: 'StratosSkyeng';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-feature-settings: 'pnum' on, 'lnum' on;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-feature-settings: 'pnum' on, 'lnum' on;
 
-    color: #FFFFFF;
+  color: #ffffff;
+}
+
+.timer {
+  position: absolute;
+  width: 155px;
+  height: 91px;
+  left: 22px;
+  top: 22px;
+}
+
+.min {
+  position: absolute;
+  width: 28px;
+  height: 32px;
+  left: 61px;
+  top: 22px;
+
+  font-family: 'StratosSkyeng';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  color: #ffffff;
+}
+
+.sek {
+  position: absolute;
+  width: 26px;
+  height: 32px;
+  left: 146px;
+  top: 22px;
+
+  font-family: 'StratosSkyeng';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  color: #ffffff;
+}
+
+.time {
+  position: absolute;
+  width: 155px;
+  height: 72px;
+  left: 22px;
+  top: 41px;
+
+  font-family: 'StratosSkyeng';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+
+  color: #ffffff;
+}
+
+.text__start-again {
+  position: absolute;
+  width: 246px;
+  height: 48px;
+  left: 755px;
+  top: 52px;
+
+  font-family: 'StratosSkyeng';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+
+  color: #ffffff;
+
+  /* z-index: 1; */
+}
+
+.button__start-again {
+  position: absolute;
+  width: 246px;
+  height: 50px;
+  left: 755px;
+  top: 52px;
+
+  background: #7ac100;
+  border-radius: 12px;
 }
