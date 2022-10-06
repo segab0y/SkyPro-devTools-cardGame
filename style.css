@@ -1,261 +1,976 @@
 body {
-  margin: 0;
-  padding: 0;
+   margin: 0;
+   padding: 0;
+}
+
+@font-face {
+   font-family: StratosSkyeng;
+   src: url('./statosskyeng-v1.001/Desktop\ fonts/stratosskyeng-regular.otf')
+         format('otf'),
+      url('./statosskyeng-v1.001/Web\ fonts/stratosskyengweb-regular.woff')
+         format('woff');
+   font-style: normal;
+   font-weight: 400;
 }
 
 .page__frame {
-  position: relative;
-  width: 1024px;
-  height: 774px;
-
-  background: #004980;
+   position: relative;
+   width: 1024px;
+   height: 774px;
+   background: #004980;
 }
 
 .frame__difficulty {
-  position: absolute;
-  width: 480px;
-  height: 459px;
-  left: 272px;
-  top: 158px;
-
-  background: #c2f5ff;
-  border-radius: 12px;
+   position: absolute;
+   width: 480px;
+   height: 459px;
+   left: 272px;
+   top: 158px;
+   background: #c2f5ff;
+   border-radius: 12px;
 }
 
 .text__difficulty {
-  position: absolute;
-  width: 208px;
-  height: 96px;
-  left: 408px;
-  top: 210px;
-
-  font-family: 'StratosSkyeng';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 48px;
-
-  text-align: center;
-  font-feature-settings: 'pnum' on, 'lnum' on;
-
-  color: #004980;
+   position: absolute;
+   width: 208px;
+   height: 96px;
+   left: 408px;
+   top: 210px;
+   font-family: StratosSkyeng, sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 40px;
+   line-height: 48px;
+   text-align: center;
+   font-feature-settings: 'pnum' on, 'lnum' on;
+   color: #004980;
 }
 
 .level__easy {
-  position: absolute;
-  width: 98px;
-  height: 98px;
-  left: 341px;
-  top: 354px;
-
-  background: #ffffff;
-  border-radius: 12px;
+   position: absolute;
+   width: 98px;
+   height: 98px;
+   left: 341px;
+   top: 354px;
+   background: #fff;
+   border-radius: 12px;
 }
 
 .text__easy {
-  position: absolute;
-  width: 97px;
-  height: 98px;
-  left: 342px;
-  top: 354px;
-
-  font-family: 'StratosSkyeng';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 64px;
-  line-height: 72px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  color: #0080c1;
+   position: absolute;
+   width: 97px;
+   height: 98px;
+   left: 342px;
+   top: 354px;
+   font-family: StratosSkyeng, sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 64px;
+   line-height: 72px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #0080c1;
 }
 
 .level__medium {
-  position: absolute;
-  width: 98px;
-  height: 98px;
-  left: 463px;
-  top: 354px;
-
-  background: #ffffff;
-  border-radius: 12px;
+   position: absolute;
+   width: 98px;
+   height: 98px;
+   left: 463px;
+   top: 354px;
+   background: #fff;
+   border-radius: 12px;
 }
 
 .text__medium {
-  position: absolute;
-  width: 96px;
-  height: 98px;
-  left: 465px;
-  top: 354px;
-
-  font-family: 'StratosSkyeng';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 64px;
-  line-height: 72px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  color: #0080c1;
+   position: absolute;
+   width: 96px;
+   height: 98px;
+   left: 465px;
+   top: 354px;
+   font-family: StratosSkyeng, sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 64px;
+   line-height: 72px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #0080c1;
 }
 
 .level__hard {
-  position: absolute;
-  width: 98px;
-  height: 98px;
-  left: 585px;
-  top: 354px;
-
-  background: #ffffff;
-  border-radius: 12px;
+   position: absolute;
+   width: 98px;
+   height: 98px;
+   left: 585px;
+   top: 354px;
+   background: #fff;
+   border-radius: 12px;
 }
 
 .text__hard {
-  position: absolute;
-  width: 96px;
-  height: 98px;
-  left: 587px;
-  top: 354px;
-
-  font-family: 'StratosSkyeng';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 64px;
-  line-height: 72px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  color: #0080c1;
+   position: absolute;
+   width: 96px;
+   height: 98px;
+   left: 587px;
+   top: 354px;
+   font-family: StratosSkyeng, sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 64px;
+   line-height: 72px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #0080c1;
 }
 
 .start__button {
-  position: absolute;
-  width: 246px;
-  height: 50px;
-  left: 389px;
-  top: 519px;
-
-  background: #7ac100;
-  border-radius: 12px;
+   position: absolute;
+   width: 246px;
+   height: 50px;
+   left: 389px;
+   top: 519px;
+   background: #7ac100;
+   border-radius: 12px;
 }
 
 .text__button {
-  position: absolute;
-  width: 246px;
-  height: 48px;
-  left: 389px;
-  top: 519px;
-
-  font-family: 'StratosSkyeng';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 32px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-feature-settings: 'pnum' on, 'lnum' on;
-
-  color: #ffffff;
+   position: absolute;
+   width: 246px;
+   height: 48px;
+   left: 389px;
+   top: 519px;
+   font-family: StratosSkyeng, sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 32px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-feature-settings: 'pnum' on, 'lnum' on;
+   color: #fff;
 }
 
-.timer {
-  position: absolute;
-  width: 155px;
-  height: 91px;
-  left: 22px;
-  top: 22px;
+.timer__element-timer {
+   position: absolute;
+   width: 155px;
+   height: 91px;
+   left: 22px;
+   top: 22px;
 }
 
-.min {
-  position: absolute;
-  width: 28px;
-  height: 32px;
-  left: 61px;
-  top: 22px;
-
-  font-family: 'StratosSkyeng';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 32px;
-
-  font-feature-settings: 'pnum' on, 'lnum' on;
-
-  color: #ffffff;
+.timer__element-min {
+   position: absolute;
+   width: 28px;
+   height: 32px;
+   left: 61px;
+   top: 22px;
+   font-family: StratosSkyeng, sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 32px;
+   font-feature-settings: 'pnum' on, 'lnum' on;
+   color: #fff;
 }
 
-.sek {
-  position: absolute;
-  width: 26px;
-  height: 32px;
-  left: 146px;
-  top: 22px;
-
-  font-family: 'StratosSkyeng';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 32px;
-
-  font-feature-settings: 'pnum' on, 'lnum' on;
-
-  color: #ffffff;
+.timer__element-sek {
+   position: absolute;
+   width: 26px;
+   height: 32px;
+   left: 146px;
+   top: 22px;
+   font-family: StratosSkyeng, sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 32px;
+   font-feature-settings: 'pnum' on, 'lnum' on;
+   color: #fff;
 }
 
-.time {
-  position: absolute;
-  width: 155px;
-  height: 72px;
-  left: 22px;
-  top: 41px;
-
-  font-family: 'StratosSkyeng';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 64px;
-  line-height: 72px;
-
-  color: #ffffff;
+.timer__element-time {
+   position: absolute;
+   width: 155px;
+   height: 72px;
+   left: 22px;
+   top: 41px;
+   font-family: StratosSkyeng, sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 64px;
+   line-height: 72px;
+   color: #fff;
 }
 
 .text__start-again {
-  position: absolute;
-  width: 246px;
-  height: 48px;
-  left: 755px;
-  top: 52px;
-
-  font-family: 'StratosSkyeng';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 32px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-feature-settings: 'pnum' on, 'lnum' on;
-
-  color: #ffffff;
-
-  /* z-index: 1; */
+   position: absolute;
+   width: 246px;
+   height: 48px;
+   left: 755px;
+   top: 52px;
+   font-family: StratosSkyeng, sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 32px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-feature-settings: 'pnum' on, 'lnum' on;
+   color: #fff;
 }
 
 .button__start-again {
-  position: absolute;
-  width: 246px;
-  height: 50px;
-  left: 755px;
-  top: 52px;
+   position: absolute;
+   width: 246px;
+   height: 50px;
+   left: 755px;
+   top: 52px;
+   background: #7ac100;
+   border-radius: 12px;
+}
 
-  background: #7ac100;
-  border-radius: 12px;
+/* card shirts screen */
+
+/* first row card shirts */
+
+.shirt__first-row-first-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 26px;
+   top: 148px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__first-row-second-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 136px;
+   top: 148px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__first-row-third-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 246px;
+   top: 148px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__first-row-fourth-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 356px;
+   top: 148px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__first-row-fifth-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 466px;
+   top: 148px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__first-row-sixth-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 576px;
+   top: 148px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__first-row-seventh-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 686px;
+   top: 148px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__first-row-eighth-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 796px;
+   top: 148px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__first-row-ninth-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 906px;
+   top: 148px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+/* second row card shirts */
+
+.shirt__second-row-first-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 26px;
+   top: 296px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__second-row-second-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 136px;
+   top: 296px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__second-row-third-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 246px;
+   top: 296px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__second-row-fourth-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 356px;
+   top: 296px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__second-row-fifth-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 466px;
+   top: 296px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__second-row-sixth-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 576px;
+   top: 296px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__second-row-seventh-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 686px;
+   top: 296px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__second-row-eighth-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 796px;
+   top: 296px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__second-row-ninth-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 906px;
+   top: 296px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+/* third row card shirts */
+
+.shirt__third-row-first-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 26px;
+   top: 444px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__third-row-second-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 136px;
+   top: 444px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__third-row-third-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 246px;
+   top: 444px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__third-row-fourth-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 356px;
+   top: 444px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__third-row-fifth-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 466px;
+   top: 444px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__third-row-sixth-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 576px;
+   top: 444px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__third-row-seventh-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 686px;
+   top: 444px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__third-row-eighth-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 796px;
+   top: 444px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__third-row-ninth-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 906px;
+   top: 444px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+/* fourth row card shirts */
+
+.shirt__fourth-row-first-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 26px;
+   top: 592px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__fourth-row-second-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 136px;
+   top: 592px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__fourth-row-third-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 246px;
+   top: 592px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__fourth-row-fourth-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 356px;
+   top: 592px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__fourth-row-fifth-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 466px;
+   top: 592px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__fourth-row-sixth-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 576px;
+   top: 592px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__fourth-row-seventh-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 686px;
+   top: 592px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__fourth-row-eighth-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 796px;
+   top: 592px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.shirt__fourth-row-ninth-card {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 906px;
+   top: 592px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+/* cards screen */
+
+/* spades */
+
+.card__ace-of-spades {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 25px;
+   top: 148px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__king-of-spades {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 135px;
+   top: 148px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__lady-of-spades {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 245px;
+   top: 148px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__jack-of-spades {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 355px;
+   top: 148px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__ten-spades {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 465px;
+   top: 148px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__nine-spades {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 575px;
+   top: 148px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__eight-spades {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 685px;
+   top: 148px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__seven-spades {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 795px;
+   top: 148px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__six-spades {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 905px;
+   top: 148px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+/* hearts */
+
+.card__ace-of-hearts {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 25px;
+   top: 296px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__king-of-hearts {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 135px;
+   top: 296px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__lady-of-hearts {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 245px;
+   top: 296px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__jack-of-hearts {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 355px;
+   top: 296px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__ten-hearts {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 465px;
+   top: 296px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__nine-hearts {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 575px;
+   top: 296px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__eight-hearts {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 685px;
+   top: 296px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__seven-hearts {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 795px;
+   top: 296px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__six-hearts {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 905px;
+   top: 296px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+/* diamonds */
+
+.card__ace-of-diamonds {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 25px;
+   top: 444px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__king-of-diamonds {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 135px;
+   top: 444px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__lady-of-diamonds {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 245px;
+   top: 444px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__jack-of-diamonds {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 355px;
+   top: 444px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__ten-diamonds {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 465px;
+   top: 444px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__nine-diamonds {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 575px;
+   top: 444px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__eight-diamonds {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 685px;
+   top: 444px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__seven-diamonds {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 795px;
+   top: 444px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__six-diamonds {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 905px;
+   top: 444px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+/* clubs */
+
+.card__ace-of-clubs {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 25px;
+   top: 592px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__king-of-clubs {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 135px;
+   top: 592px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__lady-of-clubs {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 245px;
+   top: 592px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__jack-of-clubs {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 355px;
+   top: 592px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__ten-clubs {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 465px;
+   top: 592px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__nine-clubs {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 575px;
+   top: 592px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__eight-clubs {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 685px;
+   top: 592px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__seven-clubs {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 795px;
+   top: 592px;
+   background: #fff;
+   border-radius: 4px;
+}
+
+.card__six-clubs {
+   position: absolute;
+   width: 95px;
+   height: 133px;
+   left: 905px;
+   top: 592px;
+   background: #fff;
+   border-radius: 4px;
 }
