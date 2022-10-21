@@ -12,5 +12,5 @@ rules:
    camelcase: ['error']
    eqeqeq: ['error']
 
-   parserOptions:
-   sourcetype: 'module'
+   # parserOptions:
+   # sourcetype: 'module'
