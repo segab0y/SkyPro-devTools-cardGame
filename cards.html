@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>4.3 Пакетные менеджеры. Code Linting</title>
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <div class="page__frame"></div>
+      <div class="timer__element">
+         <div class="timer__element-timer"></div>
+         <div class="timer__element-min">min</div>
+         <div class="timer__element-sek">sek</div>
+         <div class="timer__element-time">00.00</div>
+      </div>
+      <button class="button__start-again"></button>
+      <span class="text__start-again">Начать заново</span>
+      <!-- spades -->
+      <div class="card__ace-of-spades">
+         <img src="./img/cards/spades/ace_of_spades.svg" alt="туз пики" />
+      </div>
+      <div class="card__king-of-spades">
+         <img src="./img/cards/spades/king_of_spades.svg" alt="король пики" />
+      </div>
+      <div class="card__lady-of-spades">
+         <img src="./img/cards/spades/lady_of_spades.svg" alt="дама пики" />
+      </div>
+      <div class="card__jack-of-spades">
+         <img src="./img/cards/spades/jack_of_spades.svg" alt="валет пики" />
+      </div>
+      <div class="card__ten-spades">
+         <img src="./img/cards/spades/ten_spades.svg" alt="десять пики" />
+      </div>
+      <div class="card__nine-spades">
+         <img src="./img/cards/spades/nine_spades.svg" alt="девять пики" />
+      </div>
+      <div class="card__eight-spades">
+         <img src="./img/cards/spades/eight_spades.svg" alt="восемь пики" />
+      </div>
+      <div class="card__seven-spades">
+         <img src="./img/cards/spades/seven_spades.svg" alt="семь пики" />
+      </div>
+      <div class="card__six-spades">
+         <img src="./img/cards/spades/six_spades.svg" alt="шесть пики" />
+      </div>
+      <!-- hearts -->
+      <div class="card__ace-of-hearts">
+         <img src="./img/cards/hearts/ace_of_hearts.svg" alt="туз черви" />
+      </div>
+      <div class="card__king-of-hearts">
+         <img src="./img/cards/hearts/king_of_hearts.svg" alt="король черви" />
+      </div>
+      <div class="card__lady-of-hearts">
+         <img src="./img/cards/hearts/lady_of_hearts.svg" alt="дама черви" />
+      </div>
+      <div class="card__jack-of-hearts">
+         <img src="./img/cards/hearts/jack_of_hearts.svg" alt="валет черви" />
+      </div>
+      <div class="card__ten-hearts">
+         <img src="./img/cards/hearts/ten_hearts.svg" alt="десять черви" />
+      </div>
+      <div class="card__nine-hearts">
+         <img src="./img/cards/hearts/nine_hearts.svg" alt="девять черви" />
+      </div>
+      <div class="card__eight-hearts">
+         <img src="./img/cards/hearts/eight_hearts.svg" alt="восемь черви" />
+      </div>
+      <div class="card__seven-hearts">
+         <img src="./img/cards/hearts/seven_hearts.svg" alt="семь черви" />
+      </div>
+      <div class="card__six-hearts">
+         <img src="./img/cards/hearts/six_hearts.svg" alt="шесть черви" />
+      </div>
+      <!-- diamonds -->
+      <div class="card__ace-of-diamonds">
+         <img src="./img/cards/diamonds/ace_of_diamonds.svg" alt="туз бубны" />
+      </div>
+      <div class="card__king-of-diamonds">
+         <img
+            src="./img/cards/diamonds/king_of_diamonds.svg"
+            alt="король бубны"
+         />
+      </div>
+      <div class="card__lady-of-diamonds">
+         <img
+            src="./img/cards/diamonds/lady_of_diamonds.svg"
+            alt="дама бубны"
+         />
+      </div>
+      <div class="card__jack-of-diamonds">
+         <img
+            src="./img/cards/diamonds/jack_of_diamonds.svg"
+            alt="валет бубны"
+         />
+      </div>
+      <div class="card__ten-diamonds">
+         <img src="./img/cards/diamonds/ten_diamonds.svg" alt="десять бубны" />
+      </div>
+      <div class="card__nine-diamonds">
+         <img src="./img/cards/diamonds/nine_diamonds.svg" alt="девять бубны" />
+      </div>
+      <div class="card__eight-diamonds">
+         <img
+            src="./img/cards/diamonds/eight_diamonds.svg"
+            alt="восемь бубны"
+         />
+      </div>
+      <div class="card__seven-diamonds">
+         <img src="./img/cards/diamonds/seven_diamonds.svg" alt="семь бубны" />
+      </div>
+      <div class="card__six-diamonds">
+         <img src="./img/cards/diamonds/six_diamonds.svg" alt="шесть бубны" />
+      </div>
+      <!-- clubs -->
+      <div class="card__ace-of-clubs">
+         <img src="./img/cards/clubs/ace_of_clubs.svg" alt="туз крести" />
+      </div>
+      <div class="card__king-of-clubs">
+         <img src="./img/cards/clubs/king_of_clubs.svg" alt="король крести" />
+      </div>
+      <div class="card__lady-of-clubs">
+         <img src="./img/cards/clubs/lady_of_clubs.svg" alt="дама крести" />
+      </div>
+      <div class="card__jack-of-clubs">
+         <img src="./img/cards/clubs/jack_of_clubs.svg" alt="валет крести" />
+      </div>
+      <div class="card__ten-clubs">
+         <img src="./img/cards/clubs/ten_clubs.svg" alt="десять крести" />
+      </div>
+      <div class="card__nine-clubs">
+         <img src="./img/cards/clubs/nine_clubs.svg" alt="девять крести" />
+      </div>
+      <div class="card__eight-clubs">
+         <img src="./img/cards/clubs/eight_clubs.svg" alt="восемь крести" />
+      </div>
+      <div class="card__seven-clubs">
+         <img src="./img/cards/clubs/seven_clubs.svg" alt="семь крести" />
+      </div>
+      <div class="card__six-clubs">
+         <img src="./img/cards/clubs/six_clubs.svg" alt="шесть крести" />
+      </div>
+   </body>
+</html>
