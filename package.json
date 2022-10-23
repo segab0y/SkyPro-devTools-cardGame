@@ -1,40 +1,54 @@
 {
-  "name": "skypro-devtools-cardgame",
-  "version": "1.0.0",
-  "description": "This repository is for homework for the development tools course",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "http-server -p 3777",
-    "format": "prettier --write .",
-    "lint:js": "eslint ./src/**/*.js",
-    "lint:css": "stylelint ./src/**.css",
-    "lint": "npm run lint:js && npm run lint:css",
-    "prepare": "husky install"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/segab0y/SkyPro-devTools-cardGame.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/segab0y/SkyPro-devTools-cardGame/issues"
-  },
-  "homepage": "https://github.com/segab0y/SkyPro-devTools-cardGame#readme",
-  "dependencies": {
-    "http-server": "^14.1.1",
-    "lodash": "^4.17.21"
-  },
-  "devDependencies": {
-    "eslint": "^8.24.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "husky": "^8.0.1",
-    "prettier": "^2.7.1",
-    "stylelint": "^14.12.1",
-    "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-standard": "^28.0.0",
-    "stylelint-prettier": "^2.0.0"
-  }
+   "name": "skypro-devtools-cardgame",
+   "version": "1.0.0",
+   "description": "This repository is for homework for the development tools course",
+   "main": "index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start-http": "http-server -p 3777",
+      "format": "prettier --write .",
+      "lint:js": "eslint ./**/*.js",
+      "lint:css": "stylelint ./**/**.css",
+      "lint": "npm run lint:js && npm run lint:css",
+      "prepare": "husky install",
+      "build": "cross-env MODE=production webpack",
+      "start": "cross-env MODE=development webpack-dev-server --open"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/segab0y/SkyPro-devTools-cardGame.git"
+   },
+   "author": "",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/segab0y/SkyPro-devTools-cardGame/issues"
+   },
+   "homepage": "https://github.com/segab0y/SkyPro-devTools-cardGame#readme",
+   "dependencies": {
+      "http-server": "^14.1.1",
+      "lodash": "^4.17.21"
+   },
+   "devDependencies": {
+      "@babel/core": "^7.19.6",
+      "babel-loader": "^8.2.5",
+      "copy-webpack-plugin": "^11.0.0",
+      "cross-env": "^7.0.3",
+      "css-loader": "^6.7.1",
+      "css-minimizer-webpack-plugin": "^4.2.2",
+      "eslint": "^8.24.0",
+      "eslint-config-prettier": "^8.5.0",
+      "eslint-plugin-prettier": "^4.2.1",
+      "html-webpack-plugin": "^5.5.0",
+      "husky": "^8.0.1",
+      "mini-css-extract-plugin": "^2.6.1",
+      "prettier": "^2.7.1",
+      "style-loader": "^3.3.1",
+      "stylelint": "^14.12.1",
+      "stylelint-config-prettier": "^9.0.3",
+      "stylelint-config-standard": "^28.0.0",
+      "stylelint-prettier": "^2.0.0",
+      "webpack": "^5.74.0",
+      "webpack-cli": "^4.10.0",
+      "webpack-dev-server": "^4.11.1"
+   }
 }
